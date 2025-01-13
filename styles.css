@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-color: #0d1021;
+}
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 20px 10%;
+  background-color: #0d1021;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 15px;
+  margin-right: 40px;
+}
+nav a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 500;
+}
+nav a:hover,
+nav a.active {
+  color: #fd076c;
+  background-image: linear-gradient(45deg, #00ff87 35%, #60efff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d1021;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10%;
+  width: 100%;
+  height: 100vh;
+  background-color: #0d1021;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content {
+  font-size: 32px;
+  font-weight: 700;
+  max-width: 500px;
+}
+#connect {
+  height: 248px;
+  width: 380px;
+  background-color: #fd076c;
+  padding: 5px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+#tarunika {
+  color: #fd076c;
+  background-image: linear-gradient(45deg, #00ff87 35%, #60efff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+:root {
+  --cursor-color: white;
+}
+#typing {
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(45deg, #00ff87 35%, #60efff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  font-weight: bold;
+}
+#cursor {
+  display: inline-block;
+  width: 2px; /* A thin width to mimic a text cursor */
+  height: 1em; /* Matches the height of the surrounding text */
+  background-color: black; /* Cursor color */
+  vertical-align: top; /* Aligns the cursor with the text */
+  animation: blink-cursor 0.8s steps(2, start) infinite;
+}
+
+/* Define the blinking animation */
+@keyframes blink-cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#hello {
+  background-image: linear-gradient(45deg, #00f482 35%, #5ce2f1 75%);
+  width: 200px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 40px;
+  font-weight: 500;
+  z-index: 1;
+  border: none;
+  color: white;
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 255, 135, 0.6), 0 0 10px rgba(96, 239, 255, 0.6);
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+#hello:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Slightly enlarges the button */
+  /*box-shadow: 0 0 7px rgba(0, 255, 135, 0.8), 0 0 10px rgba(96, 239, 255, 0.8),
+    0 0 20px rgba(0, 255, 135, 1); /* Intensifies the glow */
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: 60px;
+  margin: 60px;
+  margin-top: 150px;
+  margin-left: 0px;
+  margin-right: 100px;
+}
+
+.socials .outer {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #00f482 35%, #5ce2f1 75%);
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-image 0.3s ease; /* Added smooth transition */
+}
+
+.socials .inner {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #0d1021;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.socials .outer:hover {
+  background-image: linear-gradient(
+    45deg,
+    #00f482 35%,
+    #5ce2f1 75%
+  ); /* Keeping your original color */
+  box-shadow: 0 0 5px rgba(0, 255, 135, 0.8), 0 0 5px rgba(96, 239, 255, 0.8),
+    0 0 5px rgba(0, 255, 135, 1);
+  transform: scale(1.1);
+}
+
+.socials .inner:hover {
+  background-color: transparent; /* Keeping your original hover effect */
+  color: #ffffff; /* Optional: Icon color remains the same */
+}
+
+#home-pic {
+  background: linear-gradient(45deg, #00f482 35%, #5ce2f1 75%);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 25px;
+  box-shadow: 0 0 10px rgba(0, 255, 135, 0.8), 0 0 15px rgba(96, 239, 255, 0.8),
+    0 0 20px rgba(0, 255, 135, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#home-pic img {
+  height: 380px;
+  width: 380px;
+  border-radius: 50%;
+}
+#abouthead {
+  color: #fd076c;
+  background-image: linear-gradient(45deg, #00ff87 35%, #60efff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 4%;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 32px;
+  font-weight: 700;
+}
+#aboutbody {
+  display: flex;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 5%;
+}
+
+#about-pic img {
+  height: 400px;
+  width: 390px;
+  border-radius: 20%;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#skillshead {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 35px;
+}
+
+#skillsbar {
+  display: flex;
+  flex-direction: row; /* Change to row for horizontal alignment */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; /* Evenly distribute images across the entire skillsbar */
+  height: 500px;
+  width: 1000px;
+  border: 2px solid #55ffb0;
+  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0, 255, 135, 0.8), 0 0 10px rgba(96, 239, 255, 0.8),
+    0 0 25px rgba(0, 255, 135, 1), 0 0 30px rgba(96, 239, 255, 1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+#skillsbar #row1,
+#skillsbar #row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#skillsbar img {
+  height: 140px;
+  width: 140px;
+  padding: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#skillsbar #row1 div,
+#skillsbar #row2 div {
+  border: 1px solid white;
+  margin: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0, 255, 135, 0.8), 0 0 5px rgba(96, 239, 255, 0.8),
+    0 0 5px rgba(0, 255, 135, 1), 0 0 5px rgba(96, 239, 255, 1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#skillsbar #row1 div:hover,
+#skillsbar #row2 div:hover {
+  border-color: #5ce2f1; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 255, 135, 1), 0 0 10px rgba(96, 239, 255, 1),
+    0 0 20px rgba(0, 255, 135, 1), 0 0 20px rgba(96, 239, 255, 1); /* Enhance the glow effect on hover */
+  transform: scale(1.07); /* Slightly scale the element on hover */
+}
+#skillsbar center {
+  margin-bottom: 15px;
+}
+#project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#projectshead {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 35px;
+  color: #fd076c;
+  background-image: linear-gradient(45deg, #00ff87 35%, #60efff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#project {
+  padding: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#projectscarousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#projectscarousel .slider-card {
+  color: #fff;
+  width: 380px;
+  height: 380px;
+  padding: 35px;
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
+  margin: 35px;
+  box-shadow: 0 0 5px rgba(0, 255, 135, 1), 0 0 5px rgba(96, 239, 255, 1),
+    0 0 10px rgba(0, 255, 135, 1), 0 0 10px rgba(96, 239, 255, 1); /* Glowing border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect: Increased shadow and smooth enlargement */
+#projectscarousel .slider-card:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 135, 1), 0 0 10px rgba(96, 239, 255, 1),
+    0 0 25px rgba(0, 255, 135, 1), 0 0 25px rgba(96, 239, 255, 1); /* Stronger shadow */
+  transform: scale(1.05); /* Enlarge smoothly */
+}
+#projectscarousel .slider-card img {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+}
+.description {
+  padding: 20px;
+  font-size: 14px; /* Adjust font size as needed */
+  text-align: center;
+  color: #bdbdbd;
+}
+.project-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure the text color matches */
+}
+
+.project-link:hover .slider-card {
+  transform: scale(1.05); /* Optional hover effect */
+  transition: transform 0.3s ease;
+}
