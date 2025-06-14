@@ -396,4 +396,10 @@ section {
   flex: 0 1 calc(50% - 40px); /* 2 per row with spacing accounted for */
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  #projectscarousel .slider-card {
+    flex: 0 1 100%;
+  }
+}
+
 
