@@ -383,3 +383,17 @@ section {
   transform: scale(1.05); /* Optional hover effect */
   transition: transform 0.3s ease;
 }
+
+#projectscarousel {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 40px; /* Optional: adds spacing between cards */
+  padding: 20px;
+}
+
+#projectscarousel .slider-card {
+  flex: 0 1 calc(50% - 40px); /* 2 per row with spacing accounted for */
+  box-sizing: border-box;
+}
+
